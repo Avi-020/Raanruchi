@@ -41,16 +41,21 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
           className="relative z-10 px-6"
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-0 flex justify-center items-center gap-2">
-            <Coffee /> Raanruchi Café
+          {/* TITLE */}
+          <h1 className="text-4xl md:text-6xl font-bold flex justify-center items-center gap-2">
+            <Coffee /> Raanruchi Cafe
           </h1>
-          <p className="mb-5 text-lg opacity-100">
+
+          {/* SLOGAN */}
+          <p className="mt-2 text-sm md:text-sm tracking-wide opacity-90">
             " Swad Jo Dil Mein Bas Jaaye "
           </p>
 
-          <h2 className="text-5xl mt-5 md:text-8xl font-extrabold tracking-widest">
+          {/* COMING SOON */}
+          <h2 className="mt-20 text-5xl md:text-8xl font-extrabold tracking-widest">
             COMING SOON
           </h2>
         </motion.div>
